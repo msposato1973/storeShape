@@ -41,7 +41,7 @@ public class SquareShapeController extends AdminController{
 	
 	
 
-	@GetMapping("/squareShape/{id}")
+	@GetMapping("/{id}")
 	private ResponseEntity<SquareShape> getSquareShape(@PathVariable("id") Long id) {
 		 return new ResponseEntity<>(squareShapeServiceImpl.getSquareShapeById(id), HttpStatus.OK); 
 	}
